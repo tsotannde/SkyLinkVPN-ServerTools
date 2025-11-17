@@ -1,72 +1,70 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Platform-Windows_Server-0078D4?style=for-the-badge&logo=windows" />
-  <img src="https://img.shields.io/badge/PowerShell-Automation-5391FE?style=for-the-badge&logo=powershell" />
-  <img src="https://img.shields.io/badge/WireGuard-Integration-88171A?style=for-the-badge&logo=wireguard" />
+  <img src="https://img.shields.io/badge/Platform-Windows%20Server-0078D4?style=for-the-badge&logo=windows" />
+  <img src="https://img.shields.io/badge/Automation-PowerShell-5391FE?style=for-the-badge&logo=powershell" />
+  <img src="https://img.shields.io/badge/Integration-WireGuard-88171A?style=for-the-badge&logo=wireguard" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
 </p>
 
-# **SkyLinkVPN-ServerTools – One-Click Automatic Configuration Toolkit for SkyLinkVPN Windows Servers**
+<h1 align="center">SkyLinkVPN-ServerTools</h1>
+<h3 align="center">⚡ Fully Automated Configuration Toolkit for SkyLinkVPN Windows Servers ⚡</h3>
 
-SkyLinkVPN-ServerTools is a fully automated provisioning system designed to turn any Windows Server into a complete WireGuard VPN node — with zero manual setup.
+<p align="center">
+Deploy a complete WireGuard-powered VPN node in minutes — fully scripted, zero manual setup.
+</p>
 
-From installation → configuration → NAT → tunnel creation → Firebase registration → listener service → hardening…
-The entire server builds itself.
+---
 
-⸻
+## ✨ Introduction
 
-🚀 Overview
+**SkyLinkVPN-ServerTools** is a full automation suite that transforms any Windows Server into a fully configured, production-ready WireGuard VPN node.
 
-This toolkit:
-	•	Installs WireGuard
-	•	Generates secure tunnels
-	•	Configures NAT + IP forwarding
-	•	Assigns dynamic client IPs
-	•	Registers server metadata to Firebase
-	•	Applies Windows hardening
-	•	Opens firewall rules
-	•	Enables RDP
-	•	Sets persistent power mode (never sleep)
-	•	Disables Windows Update
-	•	Builds a consistent directory structure
-	•	Logs every operation automatically
+The toolkit handles:
 
-Everything is repeatable, deterministic, and production-ready.
+- Installation  
+- Configuration  
+- Security hardening  
+- NAT + IP forwarding  
+- Automatic dynamic IP assigning  
+- Firebase server registration  
+- Logging + directory setup  
 
-⸻
+Everything runs automatically.
 
-🔧 Key Features
+---
 
-🛡 WireGuard Automation
+## 🚀 Features
 
-Feature	Description
-🔑 Key Generation	Auto-generate private/public key pairs
-🌐 IP Allocation	Smart 10.x.x.x subnet detection
-🔄 Dynamic Tunnel Creation	No overlap with existing tunnels
-🟢 Service Activation	Auto-start each tunnel using WG Service mode
-📡 NAT + Forwarding	Supports client routing out to the internet
+### 🔐 **WireGuard Automation**
+| Capability | Description |
+|-----------|-------------|
+| 🔑 Key Generation | Auto-generate secure private/public pairs |
+| 🌐 Smart IP Allocation | Auto-detects available `10.x.x.x` subnets |
+| 🔄 Tunnel Generation | No overlapping ports or subnets |
+| ⚙️ Service Activation | Runs WG as a service for persistence |
+| 🛰 NAT Routing | Automatic outbound routing for clients |
 
+---
 
-⸻
+### ☁️ **Firebase Integration**
+- Registers server under: `servers/{country}/servers/{name}`  
+- Stores: IP, port, OS, nickname, capacity, subscription flags  
+- Updates country requirement flags  
+- Creates local `DeviceConfig.config` for other scripts  
 
-☁️ Firebase Integration
-	•	Registers server under country hierarchy
-	•	Sends metadata (IP, port, OS, nickname, location, capacity)
-	•	Syncs server availability
-	•	Saves a local JSON config for other scripts to reference
+---
 
-⸻
+### 🛡 **Windows Server Hardening**
+- Disable Windows Update  
+- Enable RDP  
+- Disable sleep + hibernate  
+- Configure power plan  
+- Create firewall rules dynamically  
+- Assign static network (optional)  
+- Log all actions to structured folders  
 
-⚙️ Windows System Configuration
-	•	Disable system updates
-	•	Enable Remote Desktop
-	•	Apply server-mode power config
-	•	Configure static IP (optional)
-	•	Create Windows firewall rules automatically
-	•	Full logging for every command executed
+---
 
-⸻
-
-📂 Directory Layout
+## 📂 Directory Structure
 
 Operations/
 ├── Applications/
@@ -76,76 +74,80 @@ Operations/
 │     ├── Device Configuration/
 │     │      └── DeviceConfig.config
 │     ├── Logs/
-│     │      └── (auto-generated logs...)
+│     │      ├── WireGuard Dynamic Tunnel Generator/
+│     │      └── Listening Service/
 │     └── Scripts/
-│            └── (PowerShell scripts)
+│            ├── Activate-WireGuardTunnel.ps1
+│            ├── Create-Tunnel.ps1
+│            ├── SetupWireGuardNAT.ps1
+│            └── …
 │
 └── Setup/
-       ├── Deploy-WireGuardNode.bat
-       └── Services/
-             └── assign_ip.ps1
-             └── ListeningService.ps1
+├── Deploy-WireGuardNode.bat
+└── Services/
+├── assign_ip.ps1
+└── ListeningService.ps1
 
+---
 
-⸻
+## ▶️ Quick Start
 
-▶️ Quick Start
-
-1. Download repository
-
+### **1️⃣ Clone the repository**
+```bash
 git clone https://github.com/tsotnande/SkyLinkVPN-ServerTools.git
 
-2. Run as Administrator
+2️⃣ Run as Administrator
 
 Deploy-WireGuardNode.bat
 
-3. Answer prompts
-	•	Server Name
-	•	Country
-	•	City
-	•	Port
-	•	Subscription flags
-	•	Capacity
+3️⃣ Follow the on-screen prompts
 
-4. Server registers itself in Firebase
+The script will configure:
+	•	WireGuard
+	•	NAT
+	•	Tunnels
+	•	Device configuration
+	•	Server registration
+	•	Listener service
+	•	Firewall rules
 
-5. Node appears in the SkyLinkVPN platform
+4️⃣ Server is automatically added to Firebase
 
-Done — your server is now a live VPN node.
+Clients can now dynamically retrieve the node.
 
 ⸻
 
-Architecture Diagram
+🔥 High-Level Architecture
 
-              ┌────────────────────────────┐
-              │ Deploy-WireGuardNode.bat   │
-              └──────────────┬─────────────┘
+                   ┌──────────────────────────┐
+                   │ Deploy-WireGuardNode.bat │
+                   └───────────────┬──────────┘
+                                   ↓
+         ┌────────────────────────────────────────────┐
+         │ PowerShell Automation Engine               │
+         │ • WireGuard install                        │
+         │ • NAT setup                                │
+         │ • Firewall rules                           │
+         │ • System hardening                         │
+         │ • Firebase registration                    │
+         └───────────────────┬────────────────────────┘
                              ↓
-      ┌──────────────────────────────────────────────┐
-      │ PowerShell Automation Stack                  │
-      │ - WG Install                                 │
-      │ - NAT Setup                                  │
-      │ - IP Assignment Service                      │
-      │ - Firebase Sync                              │
-      │ - Power/Firewall/RDP Configuration           │
-      └───────────────────┬──────────────────────────┘
-                          ↓
-                ┌───────────────────────┐
-                │ WireGuard Interfaces  │
-                └───────────────────────┘
-                          ↓
-                ┌───────────────────────┐
-                │ Firebase Database     │
-                └───────────────────────┘
-                          ↓
-                ┌───────────────────────┐
-                │  SkyLinkVPN Clients   │
-                └───────────────────────┘
+                     ┌─────────────┐
+                     │ WireGuard   │
+                     └─────────────┘
+                             ↓
+                     ┌─────────────┐
+                     │ Firebase DB │
+                     └─────────────┘
+                             ↓
+                     ┌─────────────┐
+                     │ VPN Clients │
+                     └─────────────┘
 
 
 ⸻
 
-🛠 Included Tools
+🧑‍💻 Included Scripts
 
 WireGuard
 	•	Create-Tunnel.ps1
@@ -165,32 +167,18 @@ Firebase / Listener
 	•	assign_ip.ps1
 	•	ListeningService.ps1
 
-Entry Point
+Entrypoint
 	•	Deploy-WireGuardNode.bat
-
-⸻
-
-🧑‍💻 Developer Notes
-
-This toolchain was designed for:
-	•	Performance
-	•	Scalability
-	•	Reproducible provisioning
-	•	Minimal user input
-	•	Windows Server compatibility
-
-Ideal for building large-scale global VPN infrastructure.
 
 ⸻
 
 📄 License
 
-MIT © 2025 Adebayo Sotannde
-Use it, sell it, fork it, love it.
+MIT License – Free for personal and commercial use.
 
 ⸻
 
 ✨ Author
 
 Adebayo Sotannde
-Creator of SkyLinkVPN Server Automation Stack.
+Creator of SkyLinkVPN Server Automation Stack
