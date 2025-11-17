@@ -1,0 +1,20 @@
+2025-10-26 21:48:12 ================ ASSIGN_IP START ================
+2025-10-26 21:48:12 [STEP 1] Received public key: 5o9gmif3vK4YaztaOCfCwjFn5ksojDgf6J5jj7OwQxE=
+2025-10-26 21:48:12 [STEP 2] Active WG interface detected: Tunnel-antiarin
+2025-10-26 21:48:12 [DEBUG] wg show output:
+interface: Tunnel-antiarin   public key: dT9+o/fNm5+pNPqiB1gczlnjRuRwNldVDW1SEBPeljs=   private key: (hidden)   listening port: 51820
+2025-10-26 21:48:12 [INFO] Listen port: 51820
+2025-10-26 21:48:12 [INFO] Server public key: dT9+o/fNm5+pNPqiB1gczlnjRuRwNldVDW1SEBPeljs=
+2025-10-26 21:48:15 [INFO] Detected base subnet from Tunnel-antiarin: 10.1.0
+2025-10-26 21:48:15 [INFO] Existing peer IPs: 
+2025-10-26 21:48:15 [STEP 6] Generating unique IP...
+2025-10-26 21:48:15 [INFO] Selected IP: 10.1.0.175
+2025-10-26 21:48:15 [STEP 7] Adding peer to Tunnel-antiarin...
+2025-10-26 21:48:16 [CMD-OK] Peer added successfully
+2025-10-26 21:48:17 [STEP 8] Final JSON result:
+{
+    "port":  51820,
+    "serverPublicKey":  "dT9+o/fNm5+pNPqiB1gczlnjRuRwNldVDW1SEBPeljs=",
+    "assignedIP":  "10.1.0.175"
+}
+2025-10-26 21:48:17 ================ ASSIGN_IP END ================

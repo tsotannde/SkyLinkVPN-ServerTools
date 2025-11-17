@@ -1,0 +1,16 @@
+2025-10-27 09:09:14 [INFO] ==============================================
+2025-10-27 09:09:14 [INFO]    VPN Listening Service Startup (PowerShell)
+2025-10-27 09:09:14 [INFO] ==============================================
+2025-10-27 09:09:14 [INFO] Logs saved at: C:\Users\Administrator\Desktop\Operations\System Core\Logs\Listening Service\ListeningService_2025-10-27_09-09-14.log
+2025-10-27 09:09:14 [INFO] Reading config: C:\Users\Administrator\Desktop\Operations\System Core\Device Configuration\DeviceConfig.config
+2025-10-27 09:09:15 [INFO] Loaded port: 5100
+2025-10-27 09:09:15 [INFO] Listening on port 5100...
+2025-10-27 09:09:30 [INFO] ================= NEW REQUEST =================
+2025-10-27 09:09:30 [INFO] Path: /assign-ip
+2025-10-27 09:09:30 [DEBUG] Body: {"publicKey":"5o9gmif3vK4YaztaOCfCwjFn5ksojDgf6J5jj7OwQxE="}
+2025-10-27 09:09:30 [INFO] PublicKey: 5o9gmif3vK4YaztaOCfCwjFn5ksojDgf6J5jj7OwQxE=
+2025-10-27 09:09:30 [STEP] Running assign_ip.ps1...
+2025-10-27 09:09:33 [DEBUG] assign_ip.ps1 output:
+2025-10-27 09:09:30 ================ ASSIGN_IP START ================ 2025-10-27 09:09:30 [STEP 1] Received public key: 5o9gmif3vK4YaztaOCfCwjFn5ksojDgf6J5jj7OwQxE= 2025-10-27 09:09:30 [STEP 2] Active WG interface detected: Tunnel-antiarin 2025-10-27 09:09:30 [DEBUG] wg show output: interface: Tunnel-antiarin   public key: dT9+o/fNm5+pNPqiB1gczlnjRuRwNldVDW1SEBPeljs=   private key: (hidden)   listening port: 51821 2025-10-27 09:09:30 [INFO] Listen port: 51821 2025-10-27 09:09:30 [INFO] Server public key: dT9+o/fNm5+pNPqiB1gczlnjRuRwNldVDW1SEBPeljs= 2025-10-27 09:09:32 [INFO] Detected base subnet from Tunnel-antiarin: 10.1.0 2025-10-27 09:09:32 [INFO] Existing peer IPs:  2025-10-27 09:09:32 [STEP 6] Generating unique IP... 2025-10-27 09:09:32 [INFO] Selected IP: 10.1.0.234 2025-10-27 09:09:32 [STEP 7] Adding peer to Tunnel-antiarin... 2025-10-27 09:09:33 [CMD-OK] Peer added successfully 2025-10-27 09:09:33 [STEP 8] Final JSON result: {     "port":  51821,     "serverPublicKey":  "dT9+o/fNm5+pNPqiB1gczlnjRuRwNldVDW1SEBPeljs=",     "assignedIP":  "10.1.0.234" } 2025-10-27 09:09:33 ================ ASSIGN_IP END ================ {"port":51821,"serverPublicKey":"dT9+o/fNm5+pNPqiB1gczlnjRuRwNldVDW1SEBPeljs=","assignedIP":"10.1.0.234"}
+2025-10-27 09:09:33 [INFO] Detected and extracted valid JSON from output.
+2025-10-27 09:09:33 [OK] Responded to 

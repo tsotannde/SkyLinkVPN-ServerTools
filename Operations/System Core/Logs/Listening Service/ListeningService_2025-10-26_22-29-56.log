@@ -1,0 +1,22 @@
+2025-10-26 22:29:56 [INFO] ==============================================
+2025-10-26 22:29:56 [INFO]    VPN Listening Service Startup (PowerShell)
+2025-10-26 22:29:56 [INFO] ==============================================
+2025-10-26 22:29:56 [INFO] Logs saved at: C:\Users\Administrator\Desktop\Operations\System Core\Logs\Listening Service\ListeningService_2025-10-26_22-29-56.log
+2025-10-26 22:29:56 [INFO] Reading config: C:\Users\Administrator\Desktop\Operations\System Core\Device Configuration\DeviceConfig.config
+2025-10-26 22:29:56 [INFO] Loaded port: 5100
+2025-10-26 22:29:56 [INFO] Listening on port 5100...
+2025-10-26 22:31:15 [INFO] ================= NEW REQUEST =================
+2025-10-26 22:31:15 [INFO] Path: /assign-ip
+2025-10-26 22:31:15 [DEBUG] Body: {"publicKey":"5o9gmif3vK4YaztaOCfCwjFn5ksojDgf6J5jj7OwQxE="}
+2025-10-26 22:31:15 [INFO] PublicKey: 5o9gmif3vK4YaztaOCfCwjFn5ksojDgf6J5jj7OwQxE=
+2025-10-26 22:31:15 [STEP] Running assign_ip.ps1...
+2025-10-26 22:31:22 [DEBUG] assign_ip.ps1 output:
+2025-10-26 22:31:19 ================ ASSIGN_IP START ================ 2025-10-26 22:31:19 [STEP 1] Received public key: 5o9gmif3vK4YaztaOCfCwjFn5ksojDgf6J5jj7OwQxE= 2025-10-26 22:31:19 [STEP 2] Active WG interface detected: Tunnel-antiarin 2025-10-26 22:31:19 [DEBUG] wg show output: interface: Tunnel-antiarin   public key: dT9+o/fNm5+pNPqiB1gczlnjRuRwNldVDW1SEBPeljs=   private key: (hidden)   listening port: 51821  peer: 5o9gmif3vK4YaztaOCfCwjFn5ksojDgf6J5jj7OwQxE=   endpoint: 172.56.41.148:35022   allowed ips: 10.1.0.243/32   latest handshake: 47 seconds ago   transfer: 376.95 KiB received, 2.94 MiB sent   persistent keepalive: every 25 seconds 2025-10-26 22:31:19 [INFO] Listen port: 51821 2025-10-26 22:31:19 [INFO] Server public key: dT9+o/fNm5+pNPqiB1gczlnjRuRwNldVDW1SEBPeljs= 2025-10-26 22:31:21 [INFO] Detected base subnet from Tunnel-antiarin: 10.1.0 2025-10-26 22:31:21 [INFO] Existing peer IPs: 10.1.0.243 2025-10-26 22:31:21 [STEP 6] Generating unique IP... 2025-10-26 22:31:21 [INFO] Selected IP: 10.1.0.194 2025-10-26 22:31:21 [STEP 7] Adding peer to Tunnel-antiarin... 2025-10-26 22:31:22 [CMD-OK] Peer added successfully 2025-10-26 22:31:22 [STEP 8] Final JSON result: {     "port":  51821,     "serverPublicKey":  "dT9+o/fNm5+pNPqiB1gczlnjRuRwNldVDW1SEBPeljs=",     "assignedIP":  "10.1.0.194" } 2025-10-26 22:31:22 ================ ASSIGN_IP END ================ {"port":51821,"serverPublicKey":"dT9+o/fNm5+pNPqiB1gczlnjRuRwNldVDW1SEBPeljs=","assignedIP":"10.1.0.194"}
+2025-10-26 22:31:22 [INFO] Detected and extracted valid JSON from output.
+2025-10-26 22:31:22 [OK] Responded to 
+2025-10-27 04:22:21 [INFO] ================= NEW REQUEST =================
+2025-10-27 04:22:21 [INFO] Path: /
+2025-10-27 04:22:40 [INFO] ================= NEW REQUEST =================
+2025-10-27 04:22:40 [INFO] Path: /favicon.ico
+2025-10-27 05:19:00 [INFO] ================= NEW REQUEST =================
+2025-10-27 05:19:00 [INFO] Path: /

@@ -1,0 +1,43 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251026214008
+Username: WIN-T1HD2QBCR85\Administrator
+RunAs User: WIN-T1HD2QBCR85\Administrator
+Configuration Name: 
+Machine: WIN-T1HD2QBCR85 (Microsoft Windows NT 10.0.26100.0)
+Host Application: PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\Administrator\Desktop\Operations\Setup\Initial Setup\Create-Tunnel.ps1
+Process ID: 5560
+PSVersion: 5.1.26100.1591
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.1591
+BuildVersion: 10.0.26100.1591
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Administrator\Desktop\Operations\System Core\Logs\WireGuard Dynamic Tunnel Generator Script\October 26 2025 9-40-07 PM.log
+================================
+   WireGuard Dynamic Tunnel Generator
+================================
+[INFO] Creating directory: C:\Users\Administrator\Desktop\Operations\System Core\Tunnels
+[INFO] Checking for existing tunnels...
+[AUTO] Generated tunnel name: Tunnel-antiarin
+[AUTO] Assigned IP: 10.1.0.1/16
+[AUTO] Assigned port: 51863
+INFO - Generating keys for Tunnel-antiarin...
+OK - Created config file -> C:\Users\Administrator\Desktop\Operations\System Core\Tunnels\Tunnel-antiarin.conf
+  Name  : Tunnel-antiarin
+  IP    : 10.1.0.1/16
+  Port  : 51863
+  PublicKey : dT9+o/fNm5+pNPqiB1gczlnjRuRwNldVDW1SEBPeljs=
+----------------------------------------
+
+================================
+ Tunnel generation complete.
+Config saved to: C:\Users\Administrator\Desktop\Operations\System Core\Tunnels
+================================
+**********************
+Windows PowerShell transcript end
+End time: 20251026214015
+**********************

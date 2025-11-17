@@ -1,0 +1,35 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251026213838
+Username: WIN-T1HD2QBCR85\Administrator
+RunAs User: WIN-T1HD2QBCR85\Administrator
+Configuration Name: 
+Machine: WIN-T1HD2QBCR85 (Microsoft Windows NT 10.0.26100.0)
+Host Application: PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\Administrator\Desktop\Operations\Setup\Initial Setup\AssignStaticNetwork.ps1
+Process ID: 4980
+PSVersion: 5.1.26100.1591
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.1591
+BuildVersion: 10.0.26100.1591
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Administrator\Desktop\Operations\System Core\Logs\Set-EthernetConfig Script\October 26 2025 9-38-38 PM.log
+================================
+   Ethernet Configuration Tool
+================================
+[INFO] Using adapter: Ethernet
+
+[Current Network Info]
+   Adapter : Ethernet
+   IP      : 192.168.1.95
+   Gateway : 192.168.1.254
+   DNS     : 2600:1700:4b7:c310::1, 2600:1700:4b7:c310::1, 192.168.1.254
+[INFO] Skipping static IP configuration.
+This is fine for AWS, VPS, or DHCP-based networks.
+**********************
+Windows PowerShell transcript end
+End time: 20251026213951
+**********************

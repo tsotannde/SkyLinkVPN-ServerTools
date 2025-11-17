@@ -1,0 +1,42 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251030100822
+Username: WIN-T1HD2QBCR85\Administrator
+RunAs User: WIN-T1HD2QBCR85\Administrator
+Configuration Name: 
+Machine: WIN-T1HD2QBCR85 (Microsoft Windows NT 10.0.26100.0)
+Host Application: PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\Administrator\Desktop\Operations\Setup\Initial Setup\SetupWireGuardNAT.ps1
+Process ID: 4900
+PSVersion: 5.1.26100.1591
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.1591
+BuildVersion: 10.0.26100.1591
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Administrator\Desktop\Operations\System Core\Logs\WireGuard Auto-NAT Configurator Script\October 30 2025 10-08-21 AM.log
+================================
+   WireGuard Auto-NAT Configurator
+================================
+[OK] IP forwarding enabled.
+[SKIP] Non-WireGuard interface: Ethernet (192.168.1.40)
+
+================================
+   NAT setup complete.
+================================
+
+Caption Description ElementName InstanceID        Active ExternalIPInterfaceAddressPrefix IcmpQueryTimeout InternalIPIn
+                                                                                                           terfaceAddre
+                                                                                                           ssPrefix
+------- ----------- ----------- ----------        ------ -------------------------------- ---------------- ------------
+                                Tunnel-antiarin;0   True                                                30 10.1.0.0/16
+                                Tunnel-livre;0      True                                                30 10.2.0.0/16
+                                Tunnel-transact;0   True                                                30 10.3.0.0/16
+
+
+**********************
+Windows PowerShell transcript end
+End time: 20251030100831
+**********************

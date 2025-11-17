@@ -1,0 +1,40 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251026213833
+Username: WIN-T1HD2QBCR85\Administrator
+RunAs User: WIN-T1HD2QBCR85\Administrator
+Configuration Name: 
+Machine: WIN-T1HD2QBCR85 (Microsoft Windows NT 10.0.26100.0)
+Host Application: PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\Administrator\Desktop\Operations\Setup\Initial Setup\PreventSleep.ps1
+Process ID: 7148
+PSVersion: 5.1.26100.1591
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.1591
+BuildVersion: 10.0.26100.1591
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Administrator\Desktop\Operations\System Core\Logs\Server-Mode Power Settings Script\October 26 2025 9-38-33 PM.log
+
+================================
+   Applying Server-Mode Power Settings
+================================
+[STEP] Disabling display and sleep timeouts...
+[STEP] Disabling hibernation...
+[STEP] Setting button and lid actions to 'Do Nothing'...
+[OK] Server mode applied successfully.
+   Screen timeout           : Disabled (0 / 0 min)
+   Sleep timeout            : Disabled (0 / 0 min)
+   Hibernate timeout        : Disabled (0 / 0 min)
+   Hibernate feature        : Disabled (file removed)
+   Lid close action         : Do nothing
+   Power button action      : Do nothing
+   Sleep button action      : Do nothing
+
+System optimized for continuous uptime and remote operation.
+**********************
+Windows PowerShell transcript end
+End time: 20251026213834
+**********************

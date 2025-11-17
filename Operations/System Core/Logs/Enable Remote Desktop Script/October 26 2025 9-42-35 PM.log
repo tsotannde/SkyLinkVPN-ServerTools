@@ -1,0 +1,37 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251026214235
+Username: WIN-T1HD2QBCR85\Administrator
+RunAs User: WIN-T1HD2QBCR85\Administrator
+Configuration Name: 
+Machine: WIN-T1HD2QBCR85 (Microsoft Windows NT 10.0.26100.0)
+Host Application: PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\Administrator\Desktop\Operations\Setup\Initial Setup\EnableRDP.ps1
+Process ID: 5708
+PSVersion: 5.1.26100.1591
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.1591
+BuildVersion: 10.0.26100.1591
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Administrator\Desktop\Operations\System Core\Logs\Enable Remote Desktop Script\October 26 2025 9-42-35 PM.log
+================================
+   Configuring Remote Desktop...
+================================
+
+[STEP] Enabling Remote Desktop...
+[STEP] Allowing Remote Desktop through Firewall...
+
+[OK] Remote Desktop configuration applied.
+
+Settings:
+   Remote Desktop connections are enabled
+   Firewall rule for Remote Desktop is enabled
+
+System is ready for Remote Desktop connections.
+**********************
+Windows PowerShell transcript end
+End time: 20251026214238
+**********************

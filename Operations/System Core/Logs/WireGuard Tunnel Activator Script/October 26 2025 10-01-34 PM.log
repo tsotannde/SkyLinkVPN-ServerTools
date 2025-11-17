@@ -1,0 +1,39 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251026220134
+Username: WIN-T1HD2QBCR85\Administrator
+RunAs User: WIN-T1HD2QBCR85\Administrator
+Configuration Name: 
+Machine: WIN-T1HD2QBCR85 (Microsoft Windows NT 10.0.26100.0)
+Host Application: PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\Administrator\Desktop\Operations\Setup\Initial Setup\Activate-WireGuardTunnel.ps1
+Process ID: 3268
+PSVersion: 5.1.26100.1591
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.1591
+BuildVersion: 10.0.26100.1591
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Administrator\Desktop\Operations\System Core\Logs\WireGuard Tunnel Activator Script\October 26 2025 10-01-34 PM.log
+================================
+   WireGuard Tunnel Activator
+================================
+
+----------------------------------------
+Tunnel: Tunnel-antiarin
+[SKIP] Tunnel-antiarin already running.
+
+----------------------------------------
+Tunnel: Tunnel-livre
+[INFO] Activating Tunnel-livre...
+[SUCCESS] Tunnel-livre activated successfully.
+
+================================
+   Activation Complete
+================================
+**********************
+Windows PowerShell transcript end
+End time: 20251026220137
+**********************

@@ -1,0 +1,22 @@
+2025-10-26 22:25:27 ================ ASSIGN_IP START ================
+2025-10-26 22:25:27 [STEP 1] Received public key: 5o9gmif3vK4YaztaOCfCwjFn5ksojDgf6J5jj7OwQxE=
+2025-10-26 22:25:27 [STEP 2] Active WG interface detected: Tunnel-antiarin Tunnel-transact Tunnel-livre
+2025-10-26 22:25:27 [DEBUG] wg show output:
+
+2025-10-26 22:25:27 [INFO] Listen port: 51820
+2025-10-26 22:25:27 [INFO] Server public key: unknown
+2025-10-26 22:25:28 [WARN] No IP found on interface; fallback to 10.0.0
+2025-10-26 22:25:29 [INFO] Existing peer IPs: 
+2025-10-26 22:25:29 [STEP 6] Generating unique IP...
+2025-10-26 22:25:29 [INFO] Selected IP: 10.0.0.87
+2025-10-26 22:25:29 [STEP 7] Adding peer to Tunnel-antiarin Tunnel-transact Tunnel-livre...
+2025-10-26 22:25:30 [CMD-FAIL] Exit code: 1
+2025-10-26 22:25:30 [STDERR] Invalid argument: Tunnel-transact
+
+2025-10-26 22:25:30 [STEP 8] Final JSON result:
+{
+    "port":  51820,
+    "serverPublicKey":  "unknown",
+    "assignedIP":  "10.0.0.87"
+}
+2025-10-26 22:25:30 ================ ASSIGN_IP END ================

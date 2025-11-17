@@ -1,0 +1,67 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251026221003
+Username: WIN-T1HD2QBCR85\Administrator
+RunAs User: WIN-T1HD2QBCR85\Administrator
+Configuration Name: 
+Machine: WIN-T1HD2QBCR85 (Microsoft Windows NT 10.0.26100.0)
+Host Application: PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\Administrator\Desktop\Operations\Setup\Initial Setup\Register-WireGuardServer.ps1
+Process ID: 640
+PSVersion: 5.1.26100.1591
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.1591
+BuildVersion: 10.0.26100.1591
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Administrator\Desktop\Operations\System Core\Logs\WireGuard Firebase Registration Script\October 26 2025 10-10-03 PM.log
+================================
+   WireGuard Firebase Registration
+================================
+
+[INFO] Capturing system information...
+
+[INFO] Uploading this server to Firebase...
+
+
+allowNewConnection   : True
+capacity             : 60
+city                 : Austinn
+country              : United States
+currentCapacity      : 0
+lastUpdated          : 2025-10-26T22:10:30.3027744-07:00
+location             : Austinn, Tessaas, United States
+name                 : Test
+nickname             : Test
+osVersion            : Microsoft Windows Server 2025 Standard Evaluation
+port                 : 5100
+publicIP             : 104.184.102.254
+requiresSubscription : False
+state                : Tessaas
+
+False
+[OK] Server uploaded successfully.
+----------------------------------------
+Country: United States
+Country Requires Subscription: False
+Server: Test
+Nickname: Test
+Location: Austinn, Tessaas, United States
+Port: 5100
+Public IP: 104.184.102.254
+Server Requires Subscription: False
+Capacity: 60
+Current Capacity: 0
+Allow New Connection: True
+Firebase Path: servers/United States/servers/Test
+----------------------------------------
+
+[INFO] Saving local device configuration...
+[OK] Configuration saved at: C:\Users\Administrator\Desktop\Operations\System Core\Device Configuration\DeviceConfig.config
+[INFO] Future scripts can use this file to identify and update this node automatically.
+**********************
+Windows PowerShell transcript end
+End time: 20251026221030
+**********************

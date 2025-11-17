@@ -1,0 +1,47 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251026213956
+Username: WIN-T1HD2QBCR85\Administrator
+RunAs User: WIN-T1HD2QBCR85\Administrator
+Configuration Name: 
+Machine: WIN-T1HD2QBCR85 (Microsoft Windows NT 10.0.26100.0)
+Host Application: PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\Administrator\Desktop\Operations\Setup\Initial Setup\InstallWireGuard.ps1
+Process ID: 6516
+PSVersion: 5.1.26100.1591
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.1591
+BuildVersion: 10.0.26100.1591
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Administrator\Desktop\Operations\System Core\Logs\WireGuard Local Installer Script\October 26 2025 9-39-56 PM.log
+================================
+     Installing WireGuard...
+================================
+
+[DEBUG] Desktop path: C:\Users\Administrator\Desktop
+[DEBUG] Operations path: C:\Users\Administrator\Desktop\Operations
+[DEBUG] Applications path: C:\Users\Administrator\Desktop\Operations\Applications
+[DEBUG] Looking for installer at: C:\Users\Administrator\Desktop\Operations\Applications\wireguard-amd64-0.5.3.msi
+[DEBUG] Directory contents:
+ - NSSM
+ - ChatGPT Installer.exe
+ - VSCodeUserSetup-x64-1.105.1.exe
+ - wireguard-amd64-0.5.3.msi
+ - Wireshark-4.6.0-x64.exe
+[INFO] Installing WireGuard from local MSI...
+[DEBUG] Running command: msiexec.exe /i "C:\Users\Administrator\Desktop\Operations\Applications\wireguard-amd64-0.5.3.msi" /quiet /norestart
+[OK] Installation completed successfully.
+[INFO] WireGuard executable found at: C:\Program Files\WireGuard\wireguard.exe
+[OK] WireGuard binary verified and working.
+
+================================
+   WireGuard Installation Complete
+================================
+Executable Path: C:\Program Files\WireGuard\wireguard.exe
+**********************
+Windows PowerShell transcript end
+End time: 20251026214001
+**********************

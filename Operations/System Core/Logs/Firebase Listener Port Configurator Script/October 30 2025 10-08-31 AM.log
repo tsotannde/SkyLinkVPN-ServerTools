@@ -1,0 +1,46 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20251030100831
+Username: WIN-T1HD2QBCR85\Administrator
+RunAs User: WIN-T1HD2QBCR85\Administrator
+Configuration Name: 
+Machine: WIN-T1HD2QBCR85 (Microsoft Windows NT 10.0.26100.0)
+Host Application: PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\Administrator\Desktop\Operations\Setup\Initial Setup\FirebasePortRule.ps1
+Process ID: 6700
+PSVersion: 5.1.26100.1591
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.1591
+BuildVersion: 10.0.26100.1591
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Administrator\Desktop\Operations\System Core\Logs\Firebase Listener Port Configurator Script\October 30 2025 10-08-31 AM.log
+================================
+   Firebase Listener Port Configurator
+================================
+[INFO] Loaded port 5100 from config file.
+[INFO] Checking existing firewall rules...
+[MATCH] Existing rule 'Firebase Listener Port 5100' found - removing first...
+[ACTION] Creating inbound rule for TCP port 5100...
+[OK] Firewall rule 'Firebase Listener Port 5100' active for TCP port 5100
+
+================================
+   Firewall configuration complete.
+================================
+
+Name                                   DisplayName                 DisplayGroup Enabled Profile Direction Action Remote
+                                                                                                                 Dynami
+                                                                                                                 cKeywo
+                                                                                                                 rdAddr
+                                                                                                                 esses
+----                                   -----------                 ------------ ------- ------- --------- ------ ------
+{6f798223-81be-4709-8506-09a18ec393b8} Firebase Listener Port 5000              True    Any     Inbound   Allow  {}
+{d8a4b957-0ef7-4025-96f9-1eb728de8afe} Firebase Listener Port 5100              True    Any     Inbound   Allow  {}
+
+
+**********************
+Windows PowerShell transcript end
+End time: 20251030100836
+**********************

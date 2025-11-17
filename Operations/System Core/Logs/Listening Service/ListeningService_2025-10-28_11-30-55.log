@@ -1,0 +1,7 @@
+2025-10-28 11:30:56 [INFO] ==============================================
+2025-10-28 11:30:56 [INFO]    VPN Listening Service Startup (PowerShell)
+2025-10-28 11:30:56 [INFO] ==============================================
+2025-10-28 11:30:56 [INFO] Logs saved at: C:\Users\Administrator\Desktop\Operations\System Core\Logs\Listening Service\ListeningService_2025-10-28_11-30-55.log
+2025-10-28 11:30:56 [INFO] Reading config: C:\Users\Administrator\Desktop\Operations\System Core\Device Configuration\DeviceConfig.config
+2025-10-28 11:30:56 [INFO] Loaded port: 5100
+2025-10-28 11:30:56 [FATAL] Could not start listener: Exception calling "Start" with "0" argument(s): "Failed to listen on prefix 'http://*:5100/' because it conflicts with an existing registration on the machine."
